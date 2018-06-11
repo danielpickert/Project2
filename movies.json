@@ -1,0 +1,25 @@
+{
+"movies": [{
+	"title" : "Batman Begins",
+	"trilogy_number" : "1",
+	"main_characters" : ["Bruce Wayne / Batman", "Alfred", "Ducard", "Rachel Dawes", "Jim Gordon", "Dr. Jonathan Crane / Scarecrow", "Carmine Falcone", "Ra's Al Ghul", "Lucius Fox"],
+	"description" : "Description goes here",
+	"poster" : "Batman1.jpg" 
+},
+
+{
+	"title" : "The Dark Knight",
+	"trilogy_number" : "2",
+	"main_characters" : [],
+	"description" : "Description goes here",
+	"poster" : "Batman2.jpg"
+},
+
+{
+	"title" : "The Dark Knight Rises",
+	"trilogy_number" : "3",
+	"main_characters" : [],
+	"description" : "Description goes here",
+	"poster" : "Batman3.jpg"
+}
+]}

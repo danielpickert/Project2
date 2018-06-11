@@ -1,6 +1,28 @@
-<h1>Rap Live</h1>
-<form action="/" method="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Daniel's application</h1>
+<p> {{title}} </p>
+
+{{#each movies}}
+	<img src="/img/{{ this.poster }}" class="img-responsive">
+{{/each}}
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- random form -->
+<!-- <form action="/" method="post">
   <label for="name">Please enter your name</label>
   <input id="name" type="text" name="name">
   <input type="submit">
-</form>
+</form> -->

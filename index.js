@@ -1,26 +1,28 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
+const routes = require("./routes")
+const path = require("path")
+app.use(express.static(path.join(__dirname,"public")))
 
 app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
+// home
+app.get("/", routes.home) 
 
-app.get("/:table", (req, res) => {
-  res.send(`hello ${req.params.table}`)
-})
+// movie_single
+app.get("/batman/:number_in_trilogy?", routes.movie_single)
 
-app.get('/:name', function(req, res) {
-	res.render('template', { name: req.params.name })
-})
 
-app.get("/", (req, res) => {
-  res.render("welcome")
-})
+// random form
+// app.post("/", (req, res) => {
+//   res.render("index", {
+//     name: req.body.name,
+//   })
+// })
 
-app.post("/", (req, res) => {
-  res.render("index", {
-    name: req.body.name,
-  })
-})
+
+// notFound
+app.get('*', routes.notFound)
 
 app.set("view engine", "hbs")
 
