@@ -4,7 +4,8 @@
 	"trilogy_number" : "1",
 	"main_characters" : ["Bruce Wayne / Batman", "Alfred", "Ducard", "Rachel Dawes", "Jim Gordon", "Dr. Jonathan Crane / Scarecrow", "Carmine Falcone", "Ra's Al Ghul", "Lucius Fox"],
 	"description" : "Description goes here",
-	"poster" : "Batman1.jpg" 
+	"poster" : "Batman1.jpg",
+	"cover_photo" : "batman1cover.jpg"
 },
 
 {
@@ -12,7 +13,8 @@
 	"trilogy_number" : "2",
 	"main_characters" : [],
 	"description" : "Description goes here",
-	"poster" : "Batman2.jpg"
+	"poster" : "Batman2.jpg",
+	"cover_photo" : "batman2cover.png"
 },
 
 {
@@ -20,6 +22,7 @@
 	"trilogy_number" : "3",
 	"main_characters" : [],
 	"description" : "Description goes here",
-	"poster" : "Batman3.jpg"
+	"poster" : "Batman3.jpg",
+	"cover_photo" : "batman3cover.jpg"
 }
 ]}

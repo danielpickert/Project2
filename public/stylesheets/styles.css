@@ -1,1 +1,44 @@
-styles.css
+body {
+	background-color: black;
+}
+
+#cover_photo {
+	height: 550px;
+	width: 100%;
+	background-color: #444;
+	background-image: url("../img/The-Dark-Knight-Home-Photo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+#cover_photo #cover_title {
+	position: absolute;
+	background-color: #fff;
+	padding: 25px 60px;
+	left: 50%;
+	font-family: 'Carrois Gothic SC', sans-serif;
+    transform: translateX(-50%);
+	bottom: 0;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 1.20em;
+    letter-spacing: 0.4px;
+}
+
+#posters_wrapper {
+	padding-top: 75px;
+}
+
+.img-responsive {
+	width: 30%;
+	margin-right: 4%;
+	display: inline-block;
+	position: relative;
+}
+h1 {
+	font-family: 'Carrois Gothic SC', sans-serif;
+
+}
+
