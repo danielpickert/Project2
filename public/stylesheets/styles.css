@@ -27,11 +27,13 @@ body {
     letter-spacing: 0.4px;
 }
 
+/*Home Page Posters*/
+
 #posters_wrapper {
 	padding-top: 75px;
 }
 
-.img-responsive {
+.poster {
 	width: 30%;
 	margin-right: 4%;
 	display: inline-block;
@@ -41,4 +43,5 @@ h1 {
 	font-family: 'Carrois Gothic SC', sans-serif;
 
 }
+
 
