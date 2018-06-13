@@ -5,17 +5,19 @@ const routes = require("./routes")
 const path = require("path")
 app.use(express.static(path.join(__dirname,"public")))
 
+app.use(bodyParser.urlencoded({ extended: true })) 
+
 
 // home
 app.get("/", routes.home) 
 
 
-// random form
-// app.post("/", (req, res) => {
-//   res.render("index", {
-//     name: req.body.name,
-//   })
-// })
+// after name submit
+app.post("/", (req, res) => {
+  res.render("index", {
+  	name: req.body.name,
+})
+})
 
 
 // notFound

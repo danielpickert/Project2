@@ -6,8 +6,8 @@ module.exports = {
 		.sort({createdAt: -1})
 		.limit(10)
 		.populate("author")
-		.then(tweets => {
-			res.render("app/index", { tweets });
+		.then(posts => {
+			res.render("app/index", { posts });
 		});
 	}
 };

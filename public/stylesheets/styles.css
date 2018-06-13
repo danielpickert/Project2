@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color: white;
 }
 
 #cover_photo {
@@ -13,7 +13,7 @@ body {
 	position: relative;
 }
 
-#cover_photo #cover_title {
+#cover_photo #cover_title{
 	position: absolute;
 	background-color: #fff;
 	padding: 25px 60px;
@@ -28,24 +28,4 @@ body {
 }
 
 
-/*Home Page Posters*/
-
-#posters_wrapper {
-	padding-top: 75px;
-}
-
-.poster {
-	width: 30%;
-	margin-right: 3%;
-	display: inline-block;
-	position: relative;
-}
-h1 {
-	font-family: 'Carrois Gothic SC', sans-serif;
-
-}
-
-img {
-	max-width: 100%;
-}
 
