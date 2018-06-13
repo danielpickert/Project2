@@ -6,14 +6,8 @@ const path = require("path")
 app.use(express.static(path.join(__dirname,"public")))
 
 
-app.use(bodyParser.urlencoded({ extended: true })) // handles form submissions
-
-
 // home
 app.get("/", routes.home) 
-
-// movie_single
-app.get("/batman/:number_in_trilogy?", routes.movie_single)
 
 
 // random form

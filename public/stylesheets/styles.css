@@ -3,10 +3,10 @@ body {
 }
 
 #cover_photo {
-	height: 550px;
+	height: 500px;
 	width: 100%;
 	background-color: #444;
-	background-image: url("../img/The-Dark-Knight-Home-Photo.jpg");
+	background-image: url("../img/gordon1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -18,7 +18,7 @@ body {
 	background-color: #fff;
 	padding: 25px 60px;
 	left: 50%;
-	font-family: 'Carrois Gothic SC', sans-serif;
+	font-family: 'Lato', sans-serif;
     transform: translateX(-50%);
 	bottom: 0;
     margin: 0px;
@@ -26,6 +26,7 @@ body {
     font-size: 1.20em;
     letter-spacing: 0.4px;
 }
+
 
 /*Home Page Posters*/
 
@@ -35,7 +36,7 @@ body {
 
 .poster {
 	width: 30%;
-	margin-right: 4%;
+	margin-right: 3%;
 	display: inline-block;
 	position: relative;
 }
@@ -44,4 +45,7 @@ h1 {
 
 }
 
+img {
+	max-width: 100%;
+}
 
