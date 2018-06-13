@@ -3,7 +3,7 @@ body {
 }
 
 #cover_photo {
-	height: 500px;
+	height: 570px;
 	width: 100%;
 	background-color: #444;
 	background-image: url("../img/gordon1.jpg");
@@ -27,5 +27,33 @@ body {
     letter-spacing: 0.4px;
 }
 
+nav {
+	background-color: #0077C0;
+	height: 35px;
+}
 
+nav a {
+	color: white;
+}
+
+nav a:hover {
+	color: #C4CED4;
+	text-decoration: none;
+}
+
+ul { 
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+}
+
+li {
+	display: inline;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
 
