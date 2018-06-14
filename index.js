@@ -34,7 +34,7 @@ app.post("/user", (req, res) => {
 
 // posts a new post to the home page
 // app.post("/", (req,res) => {
-	
+
 // }
 
 
@@ -44,6 +44,9 @@ app.get('*', routes.notFound)
 
 app.set("view engine", "hbs")
 
-app.listen(4000, () => {
+app.set('port', process.env.PORT || 3001)
+app.listen(app.get('port'), () => {
+    console.log(`✅ PORT: ${app.get('port')} 🌟`)
+  }), () => {
   console.log("app listening on port 4000")
-})
+}
