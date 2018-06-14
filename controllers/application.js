@@ -1,5 +1,9 @@
 const { Post } = require("../models/Post");
 
+function index(req, res) {
+	console.log('helloworld')
+}
+
 module.exports = {
 	index: (req, res) => {
 		Post.find({})
@@ -10,4 +14,4 @@ module.exports = {
 			res.render("app/index", { posts });
 		});
 	}
-};
+}

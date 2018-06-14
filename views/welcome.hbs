@@ -1,11 +1,22 @@
+<br>
 <div id="cover_photo">
 	<h1 id="cover_title"> {{ title }}</h1>
 
 </div>
 
+<br>
 
-<form action="/" method="post">
-  <label for="name">Please enter your name</label>
-  <input id="name" type="text" name="name">
-  <input type="submit">
-</form>
+
+<br>
+
+<section class="form-container">
+  <h4>New Post</h4>
+  <form action="/post" method="post" class="post-form">
+    <p class="input-field">
+      <textarea name="post[content]" cols="70" rows="5" placeholder="Message"></textarea>
+    </p>
+    <p class="input-field">
+      <input type="submit" value="Post" class="btn">
+    </p>
+  </form>
+</section>

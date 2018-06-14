@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: #C4CED4;
 }
 
 #cover_photo {
@@ -11,25 +11,33 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
+	margin-top: 11px;
 }
 
-#cover_photo #cover_title{
+#cover_title{
 	position: absolute;
-	background-color: #fff;
-	padding: 25px 60px;
+	background-color: #C4CED4;
+	color: #0077C0 ;
+	padding: 15px 25px;
 	left: 50%;
-	font-family: 'Lato', sans-serif;
-    transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-family: 'Sunflower', sans-serif;
 	bottom: 0;
-    margin: 0px;
-    font-weight: 400;
-    font-size: 1.20em;
-    letter-spacing: 0.4px;
+  	margin: -10px;
+  	font-weight: bold;
+    font-size: 1.50em;
+    letter-spacing: 0.8px;
+    border-radius: 10px;
 }
 
 nav {
+	display: block;
+	width: 100%;
 	background-color: #0077C0;
 	height: 35px;
+	position: fixed;
+	z-index: 1;
+
 }
 
 nav a {
@@ -42,18 +50,27 @@ nav a:hover {
 }
 
 ul { 
-	list-style-type: none;
-	position: fixed;
-	top: 0;
 	width: 100%;
 	margin: 0;
 	padding: 5px 10px 5px 10px;
+	font-family: 'Lato', sans-serif;
 }
 
 li {
 	display: inline;
 	font-size: 17px;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
 }
+
+.form-container {
+	text-align: center;
+	color: #0077C0;
+	font-family: 'Sunflower', sans-serif;
+}
+
+.traffic {
+	margin-left: 10px;
+}
+
+
 
