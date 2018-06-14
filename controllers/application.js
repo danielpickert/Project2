@@ -1,8 +1,5 @@
 const { Post } = require("../models/Post");
 
-function index(req, res) {
-	console.log('helloworld')
-}
 
 module.exports = {
 	index: (req, res) => {
@@ -11,7 +8,7 @@ module.exports = {
 		.limit(10)
 		.populate("author")
 		.then(posts => {
-			res.render("app/index", { posts });
+			res.render("app/postpage", { posts });
 		});
 	}
 }

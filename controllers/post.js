@@ -1,17 +1,19 @@
 const { Post, Comment } = require("../models/Post");
+const User = require("../models/User");
 
 module.exports = {
 	create: (req, res) => {
 		Post.create({
-			content: req.body.post.content,
-			author: req.user._id
-		}).then(post => {
-			req.user.posts.push(post);
-			req.user.save(err => {
-				res.redirect(`/post/${post_id}`);
-			});
-		});
-	},
+			content: req.body.content,
+// 			author: req.user._id
+// 		}).then(post => {
+// 			req.user.posts.push(post);
+// 			req.user.save(err => {
+// 				res.redirect(`/post/${post_id}`);
+// 			});
+// 		});
+	});
+},
 	new: (req, res) => {
 		res.render("post/new");
 	},

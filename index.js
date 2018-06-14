@@ -3,6 +3,9 @@ const bodyParser = require("body-parser")
 const app = express()
 const routes = require("./routes")
 const path = require("path")
+
+const postController = require('./controllers/post')
+
 app.use(express.static(path.join(__dirname,"public")))
 
 app.use(bodyParser.urlencoded({ extended: true })); 
@@ -29,13 +32,12 @@ app.get("/user/login", (req, res) => {
 // returns user to home page after login or signup
 app.post("/user", (req, res) => {
 	// do something (like create or sign in a user)
-	res.redirect('/')
+	res.redirect("/")
 })
 
-// posts a new post to the home page
-// app.post("/", (req,res) => {
 
-// }
+// posts a new post to the home page
+app.post("/", postController.create)
 
 
 
@@ -47,6 +49,4 @@ app.set("view engine", "hbs")
 app.set('port', process.env.PORT || 3001)
 app.listen(app.get('port'), () => {
     console.log(`✅ PORT: ${app.get('port')} 🌟`)
-  }), () => {
-  console.log("app listening on port 4000")
-}
+  })
