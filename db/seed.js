@@ -15,13 +15,13 @@ User.find({}).remove(() => {
     }).then(user => {
       Promise.all([
         Post.create({
-          content: "eh, what's up doc?",
+          content: "Go Magic!",
           author: user._id
         }).then(post => {
           user.posts.push(post);
         }),
         Post.create({
-          content: "That's all, folks!",
+          content: "Why can't we win a game?",
           author: user._id
         }).then(post => {
           user.posts.push(post);

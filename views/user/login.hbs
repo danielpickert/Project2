@@ -1,19 +1,21 @@
-<section class="row">
-  <h4>Log In:</h4>
+<h4>Log In:</h4>
   
   {{#if message}}
-    <p class="alert">{{message}}</p>
+    <div class="alert alert-danger">{{message}}</div>
   {{/if}}
 
-  <form action="" method="POST" class="auth-form">
-    <p class="input-field">
-      <input type="email" name="email" placeholder="Email">
-    </p>
-    <p class="input-field">
-      <input type="password" name="password" placeholder="Password">
-    </p>
-    <p class="input-field">
-      <input type="submit" value="Log In">
-    </p>
-  </form>
-</section>
+<br>
+<div class="traffic">
+<h1>Welcome back!</h1>
+<br>
+
+
+
+<h3>Log In</h3>
+<form action="/user" method="POST" class="auth-form">
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Log In" class="btn">
+</form>
+
+</div>

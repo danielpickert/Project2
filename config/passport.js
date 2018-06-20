@@ -1,4 +1,4 @@
-ar LocalStrategy = require('passport-local').Strategy 
+var LocalStrategy = require('passport-local').Strategy 
 var User = require('../models/user')
 
 module.exports = function(passport) {
@@ -6,12 +6,12 @@ module.exports = function(passport) {
 		usernameField: 'email',
 		passwordField: 'password',
 		passReqToCallback: true
-	}, function(req, email, password, done) {
+	}, function(req, email, password, callback) {
 		User.findOne({ 'local.email' : email }, function(err, user) {
-			if(err) { return done(err) }
+			if(err) { return callback(err) }
 
 			if(user) {
-				return done(null, false, req.flash('signupMessage', 'This email is already in use'))
+				return callback(null, false, req.flash('signupMessage', 'This email is already in use'))
 			}
 
 			else {
@@ -22,12 +22,11 @@ module.exports = function(passport) {
 
 				newUser.save(function(err) {
 					if(err) throw err;
-					return done(null, newUser)
-				})
+					return callback(null, newUser)
+				});
 			}
-		})
-	}
-	))
+		});
+	}));
 
 
 	passport.use('local-login', new LocalStrategy({
@@ -37,7 +36,7 @@ module.exports = function(passport) {
 	}, function(req, email, password, callback) {
 		User.findOne({ 'local.email': email }, function(err, user) {
 			if(err) {
-				return callback(err)
+				return callback(err);
 			}
 
 			if(!user) {
@@ -47,7 +46,7 @@ module.exports = function(passport) {
 				return callback(null, false, req.flash('loginMessage', 'wrong password'))
 			}
 
-			return callback(null, user)
+			return callback(null, user);
 		})
 	}
 	))

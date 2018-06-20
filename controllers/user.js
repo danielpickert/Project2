@@ -1,5 +1,4 @@
-const User = require("../models/User");
-const { Post } = require("../models/Post");
+const { Post, User } = require("../models/index");
 const passport = require("passport");
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
     User.findOne({ _id: req.params.id })
       .populate({
         path: "posts",
-        options: { limit: 5, sort: { createdAt: -1 } }
+        options: { sort: { createdAt: -1 } }
       })
       .then(user => {
         res.render("user/show", { user });
@@ -16,7 +15,7 @@ module.exports = {
   new: (req, res) => {
     res.render("user/new");
   },
-    create: (req, res) => {
+  create: (req, res) => {
     User.create({
       local: {
         email: req.body.email,
@@ -27,7 +26,7 @@ module.exports = {
     });
 },
   login: (req, res) => {
-    res.render("user/login", { message: req.flash("signupMessage") });
+    res.render("user/login", { message: req.flash("loginMessage") });
   },
   createLogin: (req, res) => {
     const login = passport.authenticate("local-login", {
@@ -53,5 +52,13 @@ module.exports = {
   logout: (req, res) => {
     req.logout();
     res.redirect("/");
+  },
+  secret: (req, res) => {
+    if (req.isAuthenticated()) { 
+     res.render('secret') 
   }
+    else {
+     res.redirect('/')
+  }
+},
 };

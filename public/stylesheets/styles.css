@@ -14,10 +14,10 @@ body {
 	margin-top: 11px;
 }
 
-#cover_title{
+#cover_title {
 	position: absolute;
 	background-color: #C4CED4;
-	color: #0077C0 ;
+	color: #0077C0;
 	padding: 15px 25px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -25,7 +25,7 @@ body {
 	bottom: 0;
   	margin: -10px;
   	font-weight: bold;
-    font-size: 1.50em;
+    font-size: 1.70em;
     letter-spacing: 0.8px;
     border-radius: 10px;
 }
@@ -66,6 +66,10 @@ li {
 	text-align: center;
 	color: #0077C0;
 	font-family: 'Sunflower', sans-serif;
+	display: flex;
+	flex-direction: column;
+	width: 582px;
+	margin: 0 auto;
 }
 
 .traffic {
@@ -73,7 +77,17 @@ li {
 }
 
 #newpost {
-	text-align: left;
-	margin-left: 187px;
+	align-self: flex-start;
+	font-size: 1.25em;
+	font-weight: bold;
 }
+
+.posts {
+	text-align: center;
+	font-size: 1.00em;
+	width: 35%;
+	margin: 0 auto;
+/*	border: 2px solid #0077C0;*/
+	border-radius: 10px;
+ }
 

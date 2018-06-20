@@ -1,19 +1,23 @@
-<section class="row">
-  <h4>Sign Up:</h4>
+<h4>Sign Up:</h4>
 
   {{#if message}}
-    <p class="alert">{{message}}</p>
+    <div class="alert alert-danger">{{message}}</div>
   {{/if}}
-  
-  <form action="" method="POST" class="auth-form">
-    <p class="input-field">
-      <input type="email" name="email" placeholder="Email">
-    </p>
-    <p class="input-field">
-      <input type="password" name="password" placeholder="Password">
-    </p>
-    <p class="input-field">
-      <input type="submit" value="Sign Up">
-    </p>
-  </form>
-</section>
+
+<br>
+<div class="traffic">
+<h1>Welcome to Magic Traffic {{name}}</h1>
+<h4>The #1 site for Orlando Magic fans</h4>
+
+<br>
+<br>
+
+
+<h3>Sign Up</h3>
+<form action="/user" method="POST" class="auth-form">
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Sign Up" class="btn">
+</form>
+
+</div>
