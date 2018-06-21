@@ -12,9 +12,6 @@ module.exports = {
         res.render("user/show", { user });
       });
   },
-  new: (req, res) => {
-    res.render("user/new");
-  },
   create: (req, res) => {
     User.create({
       local: {
@@ -31,7 +28,7 @@ module.exports = {
   createLogin: (req, res) => {
     const login = passport.authenticate("local-login", {
       successRedirect: "/",
-      failureRedirect: "/login",
+      failureRedirect: "/user/login",
       failureFlash: true
     });
 
@@ -43,10 +40,11 @@ module.exports = {
   createSignUp: (req, res) => {
     const signup = passport.authenticate("local-signup", {
       successRedirect: "/",
-      failureRedirect: "/signup",
+      failureRedirect: "/user/signup",
       failureFlash: true
+    
     });
-
+    
     return signup(req, res);
   },
   logout: (req, res) => {

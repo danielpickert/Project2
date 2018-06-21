@@ -1,21 +1,22 @@
 const express = require('express');
 const router = express.Router();
 
-
 router.use(function (req, res, next) {
   res.locals.currentUser = req.user;
   next();
 });
 
 router.use('/', require('./application.js'));
-router.use('/user', require('./user'));
-router.use('/post', require('./post'));
+router.use('/user', require('./user.js'));
+router.use('/post', require('./post.js'));
 
 
 router.all('*', (req, res) => {
   res.status(400).send();
 
  });
+
+
 
 module.exports = router;
 

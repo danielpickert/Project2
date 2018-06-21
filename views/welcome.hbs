@@ -5,13 +5,11 @@
 </div>
 
 <br>
-
-
 <br>
 
 <section class="form-container">
   <h4 id="newpost">New Post</h4>
-  <form action="/" method="post" class="post-form">
+  <form action="/post" method="POST" class="post-form">
     <p class="input-field">
       <textarea name="content" cols="70" rows="5" placeholder="Message"></textarea>
     </p>
@@ -23,6 +21,6 @@
 
 {{#each posts}}
   <div class="posts">
-  <p>{{content}}</p>
+  <p>{{content}} {{comments}} {{author}}</p>
   </div>
 {{/each}}

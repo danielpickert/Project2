@@ -87,7 +87,10 @@ li {
 	font-size: 1.00em;
 	width: 35%;
 	margin: 0 auto;
-/*	border: 2px solid #0077C0;*/
+	border: 2px solid #0077C0;
 	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
  }
+
 

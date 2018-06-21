@@ -3,12 +3,12 @@ const { Post, Comment, User } = require("../models/index");
 
 module.exports = {
 	create: (req, res) => {
+		console.log(req.body)
 		Post.create({
 			content: req.body.content,
 			// author: req.user.id
 		})
-		.then(
-			(post) => {
+		.then((post) => {
 			res.redirect('/')
 		})
 		// 	req.user.posts.push(post);
