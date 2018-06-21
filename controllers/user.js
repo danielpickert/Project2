@@ -12,16 +12,16 @@ module.exports = {
         res.render("user/show", { user });
       });
   },
-//   create: (req, res) => {
-//     User.create({
-//       local: {
-//         email: req.body.email,
-//         password: req.body.password
-//       }
-//     }).then(user => {
-//       res.redirect(`/user/${user._id}`);
-//     });
-// },
+  create: (req, res) => {
+    User.create({
+      local: {
+        email: req.body.email,
+        password: req.body.password
+      }
+    }).then(user => {
+      res.redirect(`/user/${user._id}`);
+    });
+},
   login: (req, res) => {
     res.render("user/login", { message: req.flash("loginMessage") });
   },

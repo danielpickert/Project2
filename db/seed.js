@@ -20,7 +20,7 @@ User.find({}).remove(() => {
           user.posts.push(post);
         }),
         Post.create({
-          content: "Testing 123",
+          content: "TESTING",
           author: user._id
         }).then(post => {
           user.posts.push(post);
