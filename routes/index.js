@@ -24,23 +24,3 @@ module.exports = router;
 
 
 
-
-
-
-// const express = require('express');
-// const router = express.Router();
-// const { Post } = require("../models/index");
-
-// module.exports = {
-// 	home : (req, res) => {
-// 		Post.find({})
-// 			.then((posts) => {
-// 				res.render("welcome", { posts })
-// 			});	  
-// 	},
-// 	notFound : (req, res) => {
-// 		res.send("This page doesn't exist")
-// 	},
-// };
-
-

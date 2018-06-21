@@ -85,6 +85,7 @@ li {
 	align-self: flex-start;
 	font-size: 1.25em;
 	font-weight: bold;
+	margin-left: 35px;
 }
 
 .posts {

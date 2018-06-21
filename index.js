@@ -14,6 +14,7 @@ require('./config/passport')(passport);
 
 hbs.registerPartials(__dirname + "/views/partials");
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(cookieParser());
 app.use(methodOverride("_method"));
@@ -35,6 +36,7 @@ app.use(require("./routes/index.js"));
 
 // View Engine
 app.set("view engine", "hbs")
+
 
 
 // app.use(function (err, req, res, next {

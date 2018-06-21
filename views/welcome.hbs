@@ -21,6 +21,24 @@
 
 {{#each posts}}
   <div class="posts">
-  <p>{{content}} {{comments}}</p>
+  <p>{{content}} 
+<!--     <br><br> {{author.local.email}} --></p>
   </div>
 {{/each}}
+<!-- 
+{{#if currentUser}}
+<div class="card">
+  <div class="card-content">
+    <h4 class="card-title">Add a comment:</h6>
+    <form method="POST" action="/post/{{id}}?_method=PUT" class="row">
+      <p class="input-field inline col s10">
+        <label for="content"></label>
+        <input type="text" name="content" id="">
+      </p>
+      <p class="input-field inline col s2">
+        <input class="btn" type="submit" value="Submit">
+      </p>
+    </form>
+  </div>
+</div>
+{{/if }} -->

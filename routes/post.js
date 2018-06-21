@@ -4,9 +4,9 @@ const postController = require("../controllers/post");
 
 
 
-router.post("/", postController.create);
-router.get("/new", postController.new);
-// router.get("/:id", postController.show);
-// router.put("/:id", postController.update);
+router.post("/", postController.requireAuth, postController.create);
+router.get("/new", postController.requireAuth, postController.new);
+router.get("/:id", postController.show);
+router.put("/:id", postController.update);
 
 module.exports = router;
