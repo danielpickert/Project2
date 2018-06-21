@@ -72,8 +72,13 @@ li {
 	margin: 0 auto;
 }
 
-.traffic {
+.welcomeback {
 	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+
+
 }
 
 #newpost {
@@ -93,4 +98,9 @@ li {
 	margin-top: 10px;
  }
 
+#logo {
+	border-radius: 10px;
+	height: 65px;
+	margin-left: 10px;
 
+}

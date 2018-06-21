@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt-nodejs");
 const Schema = mongoose.Schema;
 
 const User = new Schema({
@@ -13,7 +13,6 @@ const User = new Schema({
       ref: "Post"
     }
   ]
-
 });
 
 User.methods.encrypt = function(password) {

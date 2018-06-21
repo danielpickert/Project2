@@ -6,9 +6,10 @@ router.get('/login', userController.login);
 router.post('/login', userController.createLogin);
 router.get('/signup', userController.signUp);
 router.post('/signup', userController.createSignUp);
-router.get('/logout', userController.logout);
-router.get('/:id', userController.show);
-router.get('/secret', userController.secret)
+// router.get('/logout', userController.logout);
+// router.get('/:id', userController.show);
+// router.get('/secret', userController.secret)
+
 
 
 
