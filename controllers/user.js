@@ -2,16 +2,16 @@ const { Post, User } = require("../models/index");
 const passport = require("passport");
 
 module.exports = {
-  // show: (req, res) => {
-  //   User.findOne({ _id: req.params.id })
-  //     .populate({
-  //       path: "posts",
-  //       options: { sort: { createdAt: -1 } }
-  //     })
-  //     .then(user => {
-  //       res.render("user/show", { user });
-  //     });
-  // },
+  show: (req, res) => {
+    User.findOne({ _id: req.params.id })
+      .populate({
+        path: "posts",
+        options: { sort: { createdAt: -1 } }
+      })
+      .then(user => {
+        res.render("user/show", { user });
+      });
+  },
 //   create: (req, res) => {
 //     User.create({
 //       local: {
@@ -50,12 +50,12 @@ module.exports = {
     req.logout();
     res.redirect("/");
   },
-//   secret: (req, res) => {
-//     if (req.isAuthenticated()) { 
-//      res.render('secret') 
-//   }
-//     else {
-//      res.redirect('/')
-//   }
-// },
+  secret: (req, res) => {
+    if (req.isAuthenticated()) { 
+     res.render('secret') 
+  }
+    else {
+     res.redirect('/')
+  }
+},
 };

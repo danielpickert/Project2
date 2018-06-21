@@ -17,9 +17,9 @@ module.exports = {
 		// 	});
 		// });
 	},
-	// new: (req, res) => {
-	// 	res.render("post/new");
-	// },
+	new: (req, res) => {
+		res.render("post/new");
+	},
 	// show: (req, res) => {
 	// 	Comment.findOne({_id: req.params.id })
 	// 	.populate("author")

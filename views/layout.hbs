@@ -17,9 +17,11 @@
   			<ul>
   			<li><a href="/" class="left">ORLANDO MAGIC</a></li>
 			{{#if currentUser}}
-  			<li style="float:right"><a href="/post/new">New Post</a></li>
-  			<li style="float:right"><a href="/user/{{currentUser.id}}">Profile</a></li>
-  			<li style="float:right"><a href="/user/logout">Log Out {{currentUser.local.email}}</a></li>
+  			<li style="float:right"><a href="/user/logout">Log out {{currentUser.local.email}}</a></li>
+        <li style="float:right"><a href="/user/{{currentUser.id}}">Profile </a>🏀</li>
+        <!-- <li style="float:right"><a href="/post/new">New Post </a>🏀</li> -->
+  			
+  			
 			{{else}}
 			<li style="float:right"><a href="/user/signup">Sign Up</a></li>
 			<li style="float:right"><a href="/user/login">Log In </a>🏀</li>

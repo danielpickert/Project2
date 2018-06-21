@@ -12,6 +12,7 @@ const hbs = require("hbs");
 const app = express();
 require('./config/passport')(passport);
 
+hbs.registerPartials(__dirname + "/views/partials");
 
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.use(cookieParser());

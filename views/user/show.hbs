@@ -1,12 +1,15 @@
+<br>
+<br>
 <section class="profile">
   <h2>{{user.local.email}}</h2>
   {{#if user.posts}}
     <div class="posts">
       {{#each user.posts}}
-         {{> 'post'}}
+         {{> 'post' }}
       {{/each}}
     </div>
   {{else}}
     <p>No Posts yet</p>
   {{/if}}
 </section>
+
