@@ -13,8 +13,7 @@ module.exports = {
 				res.redirect('/')
 		})
 
-			});
-		
+			});	
 	},
 	new: (req, res) => {
 		res.render("post/new");

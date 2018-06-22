@@ -1,10 +1,12 @@
 Planning
 
-Orlando Magic reddit-style fan page
+My express app is an Orlando Magic reddit-style fan page. It's a place where fans can go during games or whenever to discuss all things Magic. One feature I still hope to implement is voice recording comments.
 
-models:
+Models:
 
 User
 Post
+Comment
 
 
+Create an issue issue on project2-gallery respository containing link to project 2 repo and link to screencast
