@@ -3,8 +3,8 @@ const { Post } = require("../models/index");
 module.exports = {
 	index: (req, res) => {
 		Post.find({})
-			.sort({ createdAt: -1 })
 			.populate("author")
+			.sort({ createdAt: -1 })
 			.then((posts) => {
 				res.render("welcome", { posts })
 			});	  
