@@ -1,12 +1,12 @@
-#Magic Traffic: an Orlando Magic Fan Page 
+# Magic Traffic: an Orlando Magic Fan Page 
 
-##Description
+## Description
 
 This is an Orlando Magic fan page app. It is for fans to discuss all things Orlando Magic, whether it's during live games or whenever they feel like it.
 
-![alt text](AGscreenshot.png)
+![alt text](./public/img/AGscreenshot.png)
 
-##Features
+## Features
 
 * Orlando Magic fans can post their thoughts on the home page for the world to see
 
@@ -18,7 +18,7 @@ I categorized this project into 3 categories with goals I wanted to accomplish:
 
 * Gold - Implement voice recording for comments as well as be able to comment on each post. 
 
-##Technologies Used
+## Technologies Used
 
 * HTML
 * CSS
