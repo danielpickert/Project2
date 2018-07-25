@@ -1,6 +1,6 @@
 <br>
 <div id="cover_photo">
-	<h1 id="cover_title"> Magic Traffic </h1>
+  <h1 id="cover_title"> Magic Traffic </h1>
 </div>
 
 <br>
@@ -10,7 +10,7 @@
   <h4 id="newpost">New Post</h4>
   <form action="/post" method="POST" class="post-form">
     <p class="input-field">
-      <textarea name="content" cols="70" rows="3" placeholder="Message"></textarea>
+      <textarea name="content" cols="70%" rows="3" placeholder="Message"></textarea>
     </p>
     <p class="input-field">
       <input type="submit" value="Post" class="btn">
@@ -19,10 +19,11 @@
 </section>
 
 {{#each posts}}
-  <div class="posts">
-  <p>{{content}} 
-<!--     <br><br> {{author.local.email}} --></p>
-  </div>
+<div class="posts">
+  <p>{{content}}
+    <!--     <br><br> {{author.local.email}} -->
+  </p>
+</div>
 {{/each}}
 <!-- 
 {{#if currentUser}}
