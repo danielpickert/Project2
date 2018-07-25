@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link href="https://fonts.googleapis.com/css?family=Sunflower:500|Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:500|Lato" rel="stylesheet">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
 
-<link rel="stylesheet" href="/stylesheets/bootstrap.css" />
-<link rel="stylesheet" href="/stylesheets/styles.css" />
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+	<link rel="stylesheet" href="/stylesheets/styles.css" />
 
 
 
@@ -17,25 +19,34 @@
 
 </head>
 
-  <body>
-  		<nav>
-  			<ul>
-  			<li><a href="/" class="left">ORLANDO MAGIC</a></li>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href="/" class="left">ORLANDO MAGIC</a>
+			</li>
 			{{#if currentUser}}
-  			<li style="float:right"><a href="/user/logout">Log out {{currentUser.local.email}}</a></li>
-        <li style="float:right"><a href="/user/{{currentUser.id}}">Profile </a>🏀</li>
-        <!-- <li style="float:right"><a href="/post/new">New Post </a>🏀</li> -->
-  			
-  			
+			<li style="float:right">
+				<a href="/user/logout">Log out {{currentUser.local.email}}</a>
+			</li>
+			<li style="float:right">
+				<a href="/user/{{currentUser.id}}">Profile </a>🏀</li>
+			<!-- <li style="float:right"><a href="/post/new">New Post </a>🏀</li> -->
+
+
 			{{else}}
-			<li style="float:right"><a href="/user/signup">Sign Up</a></li>
-			<li style="float:right"><a href="/user/login">Log In </a>🏀</li>
+			<li style="float:right">
+				<a href="/user/signup">Sign Up</a>
+			</li>
+			<li style="float:right">
+				<a href="/user/login">Log In </a>🏀</li>
 			{{/if}}
-			</ul>
-		</nav>
+		</ul>
+	</nav>
 
-   {{{body}}}
+	{{{body}}}
 
-  
-  </body>
+
+</body>
+
 </html>
