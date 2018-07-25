@@ -1,114 +1,109 @@
 body {
-	background-color: #C4CED4;
+  background-color: #c4ced4;
 }
 
 #cover_photo {
-	height: 570px;
-	width: 100%;
-	background-color: #444;
-	background-image: url("../img/gordon1.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-	margin-top: 11px;
+  height: 570px;
+  width: 100%;
+  background-color: #444;
+  background-image: url("../img/gordon1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-top: 11px;
 }
 
 #cover_title {
-	position: absolute;
-	background-color: #C4CED4;
-	color: #0077C0;
-	padding: 15px 25px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: 'Sunflower', sans-serif;
-	bottom: 0;
-  	margin: -10px;
-  	font-weight: bold;
-    font-size: 1.70em;
-    letter-spacing: 0.8px;
-    border-radius: 10px;
+  position: absolute;
+  background-color: #c4ced4;
+  color: #0077c0;
+  padding: 15px 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Sunflower", sans-serif;
+  bottom: 0;
+  margin: -10px;
+  font-weight: bold;
+  font-size: 1.7em;
+  letter-spacing: 0.8px;
+  border-radius: 10px;
 }
 
 nav {
-	display: block;
-	width: 100%;
-	background-color: #0077C0;
-	height: 35px;
-	position: fixed;
-	z-index: 1;
-
+  display: block;
+  width: 100%;
+  background-color: #0077c0;
+  height: 35px;
+  position: fixed;
+  z-index: 1;
 }
 
 nav a {
-	color: white;
+  color: white;
 }
 
 nav a:hover {
-	color: #C4CED4;
-	text-decoration: none;
+  color: #c4ced4;
+  text-decoration: none;
 }
 
-ul { 
-	width: 100%;
-	margin: 0;
-	padding: 5px 10px 5px 10px;
-	font-family: 'Lato', sans-serif;
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  font-family: "Lato", sans-serif;
 }
 
 li {
-	display: inline;
-	font-size: 17px;
-	font-weight: bold;
+  display: inline;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .form-container {
-	text-align: center;
-	color: #0077C0;
-	font-family: 'Sunflower', sans-serif;
-	display: flex;
-	flex-direction: column;
-	width: 582px;
-	margin: 0 auto;
+  text-align: center;
+  color: #0077c0;
+  font-family: "Sunflower", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .welcomeback {
-	margin-left: 10px;
-	display: flex;
-	flex-direction: column;
-	align-self: flex-start;
-
-
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 #newpost {
-	align-self: flex-start;
-	font-size: 1.25em;
-	font-weight: bold;
-	margin-left: 36px;
-	margin-bottom: 2px;
+  align-self: flex-start;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-left: 36px;
+  margin-bottom: 2px;
 }
 
 .posts {
-	text-align: center;
-	font-size: 1.00em;
-	width: 35%;
-	margin: 0 auto;
-	border: 2px solid #0077C0;
-	border-radius: 4px;
-	margin-bottom: 15px;
-	margin-top: 10px;
-/*	padding: 5px;*/
- }
-
+  text-align: center;
+  font-size: 1em;
+  width: 35%;
+  margin: 0 auto;
+  border: 2px solid #0077c0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  /*	padding: 5px;*/
+}
 
 #logo {
-	border-radius: 10px;
-	height: 65px;
-	margin-left: 10px;
-
+  border-radius: 10px;
+  height: 65px;
+  margin-left: 10px;
 }
 
 .profile {
-	text-align: center;
+  text-align: center;
 }
