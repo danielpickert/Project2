@@ -21,15 +21,10 @@
 {{!-- {{/if}} --}}
 <div class="card">
   <div class="card-content">
-    <h4 class="card-title">Add a comment:</h6>
-    <form method="POST" action="/post/{{id}}?_method=PUT" class="row">
-      <p class="input-field inline col s10">
-        <label for="content"></label>
-        <input type="text" name="content">
-      </p>
-      <p class="input-field inline col s2">
-        <input class="btn" type="submit" value="Comment">
-      </p>
+    <form method="POST" action="/post/{{id}}">
+      Add a comment: <input type="text" name="content">
+      <input type="submit" value="Submit" class="btn">
     </form>
+
   </div>
 </div>
