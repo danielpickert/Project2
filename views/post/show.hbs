@@ -1,0 +1,35 @@
+<br>
+<br>
+{{!-- <p class="card">
+  {{> 'post'}}
+</p> --}}
+
+{{!-- {{#if comments.length}} --}}
+  {{!-- {{#each comments}} --}}
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">
+          {{ content }}
+        </span>
+      </div>
+      <div class="card-action">
+        <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a>
+        <span class="post__date">{{ createdAt }}</span>
+      </div>
+    </div>
+  {{!-- {{/each}} --}}
+{{!-- {{/if}} --}}
+<div class="card">
+  <div class="card-content">
+    <h4 class="card-title">Add a comment:</h6>
+    <form method="POST" action="/post/{{id}}?_method=PUT" class="row">
+      <p class="input-field inline col s10">
+        <label for="content"></label>
+        <input type="text" name="content">
+      </p>
+      <p class="input-field inline col s2">
+        <input class="btn" type="submit" value="Comment">
+      </p>
+    </form>
+  </div>
+</div>

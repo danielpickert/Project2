@@ -20,9 +20,16 @@
 
 {{#each posts}}
 <div class="posts">
-  <p>{{content}}
+    <a href="/post/{{id}}">{{content}}</a>
+    <br>
+    <br>
+    <form method="POST" action="/post/{{id}}?_method=PUT">
+      Update:<input type="text" name="content">
+      <input type="submit"value="Submit" class="btn">
+    </form>
+    <a href="/"><button class="btn">Delete</button></a>
+    
     <!--     <br><br> {{author.local.email}} -->
-  </p>
 </div>
 {{/each}}
 <!-- 
@@ -42,3 +49,4 @@
   </div>
 </div>
 {{/if }} -->
+

@@ -7,5 +7,6 @@ router.post("/", postController.requireAuth, postController.create);
 router.get("/new", postController.requireAuth, postController.new);
 router.get("/:id", postController.show);
 router.put("/:id", postController.update);
+router.delete("/:id", postController.destroy);
 
 module.exports = router;
