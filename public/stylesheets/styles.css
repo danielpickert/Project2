@@ -79,11 +79,16 @@ li {
 }
 
 #newpost {
+  display: flex;
   align-self: flex-start;
   font-size: 1.25em;
   font-weight: bold;
-  margin-left: 36px;
+  margin-left: 90px;
   margin-bottom: 2px;
+}
+
+.input-field textarea {
+  width: 70%;
 }
 
 .posts {
@@ -115,5 +120,17 @@ button,
   -webkit-appearance: none;
   -webkit-opacity: 1;
   background: white;
+
+}
+
+/*iPhone 6/7/8 and iPad*/
+@media screen and (max-width: 800px) {
+  #newpost {
+ 
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-right: 210px;
+    margin-bottom: 2px;
+  }
 
 }
