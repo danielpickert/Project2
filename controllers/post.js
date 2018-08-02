@@ -40,31 +40,14 @@ module.exports = {
       }
     );
   },
-  // let { content } = req.body;
-  // Post.findOneAndUpdate({ _id: req.params.id }).then(post => {
-  //   post.comments.push({
-  //     content,
-  //     author: req.user._id
-  //   });
-  //   post.save(err => {
-  //     res.redirect(`/post/${post._id}`);
-  //   });
-  // });
   destroy: (req, res) => {
-    Post.findOneAndRemove(
-      {
-        _id: req.params.id
-      },
-      function(err, post) {
-        if (err) {
-          res.send("error deleting");
-        } else {
-          console.log(req.params.id);
-        }
+    Post.findByIdAndRemove(req.params.id, { content: req.body.content }).then(
+      post => {
+        post.save(err => {
+          res.redirect("/");
+        });
       }
-    ).then(() => {
-      res.redirect("/");
-    });
+    );
   },
   requireAuth: function(req, res, next) {
     if (req.isAuthenticated()) {

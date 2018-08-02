@@ -27,7 +27,11 @@
       Update:<input type="text" name="content">
       <input type="submit"value="Submit" class="btn">
     </form>
-    <a href="/"><button class="btn">Delete</button></a>
+
+    <form method="POST" action="/post/{{id}}?_method=DELETE">
+      <button class="btn">Delete</button>
+    </form>
+
     
     <!--     <br><br> {{author.local.email}} -->
 </div>
