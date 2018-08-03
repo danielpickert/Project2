@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const Comment = new Schema({
-  content: String,
+  content: { type: String, required: true },
   createdAt: {
     type: Date,
     default: Date.now()
@@ -23,7 +23,7 @@ const Post = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User"
   },
-  comments: [Comment]
+  comments: [{ type: Schema.Types.ObjectId, ref: "Comment" }]
 });
 
 module.exports = {

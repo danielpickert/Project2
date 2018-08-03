@@ -18,14 +18,9 @@ module.exports = {
   show: (req, res) => {
     Post.findOne({ _id: req.params.id })
       .populate("author")
-      .exec(function(err, post) {
-        // Comment.populate(post.comments, { path: "author" }, function(
-        //   err,
-        //   comments
-        // )
-        // {
-        //   post.comments = comments;
-
+      .populate("comments")
+      // get (populate) comment authors
+      .then(post => {
         res.render("post/show", post);
       });
   },

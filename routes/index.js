@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 router.use((req, res, next) => {
@@ -6,21 +6,12 @@ router.use((req, res, next) => {
   next();
 });
 
-router.use('/', require('./application.js'));
-router.use('/user', require('./user.js'));
-router.use('/post', require('./post.js'));
+router.use("/", require("./application.js"));
+router.use("/user", require("./user.js"));
+router.use("/post", require("./post.js"));
 
-
-router.all('*', (req, res) => {
+router.all("*", (req, res) => {
   res.status(400).send();
-
- });
-
-
+});
 
 module.exports = router;
-
-
-
-
-
